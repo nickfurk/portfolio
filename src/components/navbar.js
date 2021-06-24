@@ -4,7 +4,7 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 export default class Sidebar extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Navbar.Brand href="#home">April Cheng</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

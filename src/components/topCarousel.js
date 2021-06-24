@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Carousel, Button } from "react-bootstrap";
 import DemoImage from "../images/demo-image.jpg";
 
-export default class About extends Component {
+export default class TopCarousel extends Component {
   render() {
     return (
       <Carousel fade>
