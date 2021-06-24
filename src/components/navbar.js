@@ -9,7 +9,7 @@ export default class Sidebar extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#about-me">About Me</Nav.Link>
+            <Nav.Link href="#about-me">About</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#certs">Certs</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
