@@ -1,34 +1,18 @@
 import React, { Component } from "react";
 import { Badge, Button } from "react-bootstrap";
-
-// import React from "react";
-import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
-import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "../css/projects.css";
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      width: "95%",
-    },
-    heading: {
-      fontSize: theme.typography.pxToRem(15),
-      fontWeight: theme.typography.fontWeightRegular,
-    },
-  })
-);
-
 export default function SimpleAccordion() {
-  //   const classes = useStyles();
-
   return (
     <div className="project-section">
       <br></br>
       <br></br>
+      <br></br>
+
       <h1>
         <Badge bg="secondary">Projects</Badge>
       </h1>
@@ -92,7 +76,7 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <h6>CapWise (Occupancy Counter Web App)</h6>
+          <h6>CapWise (Occupancy Counter)</h6>
         </AccordionSummary>
         <AccordionDetails>
           <div>

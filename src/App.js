@@ -7,6 +7,7 @@ import About from "./components/about";
 import TechStack from "./components/techStack";
 import Certs from "./components/certs";
 import Projects from "./components/projects";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <TechStack></TechStack>
       <Certs></Certs>
       <Projects></Projects>
+      <Contact></Contact>
     </div>
   );
 }
