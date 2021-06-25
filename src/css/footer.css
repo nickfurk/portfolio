@@ -1,0 +1,9 @@
+.footer-div {
+  height: 70px;
+  background-color: rgba(52, 58, 64, 255);
+}
+
+.footer-text {
+  font-size: small;
+  color: white;
+}

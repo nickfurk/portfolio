@@ -11,7 +11,6 @@ export default class Sidebar extends Component {
           <Nav className="mr-auto">
             <Nav.Link href="#about-me">About</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#architecture">Architectures</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
 
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">

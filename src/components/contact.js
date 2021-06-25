@@ -47,6 +47,9 @@ export default class Contact extends Component {
             </Container>
           </Form>
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
     );
   }
