@@ -17,6 +17,7 @@ import { GlassMagnifier } from "react-image-magnifiers";
 import TreeDemo1 from "../images/treedemo1.png";
 import TreeDemo2 from "../images/treedemo2.png";
 import CapWiseDemo from "../images/capwise-demo.png";
+import FlareIcon from "@material-ui/icons/Flare";
 
 export default function SimpleAccordion() {
   return (
@@ -29,6 +30,7 @@ export default function SimpleAccordion() {
 
           <h1>
             <Badge bg="secondary">Projects</Badge>
+            <FlareIcon />
           </h1>
 
           <Accordion>

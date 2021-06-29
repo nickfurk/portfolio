@@ -8,6 +8,8 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import ContactMailIcon from "@material-ui/icons/ContactMail";
+
 export default class Contact extends Component {
   render() {
     return (
@@ -20,7 +22,9 @@ export default class Contact extends Component {
 
             <h1>
               <Badge bg="secondary">Contact</Badge>
+              <ContactMailIcon />
             </h1>
+
             <p>If you would like to contact me. Fill in the form below.</p>
 
             <div>

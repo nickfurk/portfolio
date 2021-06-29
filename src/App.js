@@ -9,6 +9,7 @@ import Certs from "./components/certs";
 import Education from "./components/education";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
+import Connect from "./components/connect";
 import Footer from "./components/footer";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Education></Education>
       <Projects></Projects>
       <Contact></Contact>
+      <Connect></Connect>
       <Footer></Footer>
     </div>
   );
