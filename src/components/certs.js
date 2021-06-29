@@ -19,7 +19,7 @@ export default class Certs extends Component {
               <Col sm={8}>
                 <Badge pill variant="info">
                   Certified Solution Architect - Associate (exp. 2020)
-                </Badge>
+                </Badge>{" "}
                 <Badge pill variant="info">
                   Certified Solution Architect - Professional (exp. 2020)
                 </Badge>
