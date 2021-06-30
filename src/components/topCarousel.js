@@ -13,6 +13,7 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import ResumeFile from "../downloadFile/AprilCheng_Resume.pdf";
 
 export default class TopCarousel extends Component {
   render() {
@@ -30,9 +31,14 @@ export default class TopCarousel extends Component {
                 <h2>
                   <Typist>Hello, I'm April!</Typist>
                 </h2>
-                <Button variant="dark">
+                {/* <Button variant="dark">
                   Download CV <GetAppIcon />
-                </Button>{" "}
+                </Button>{" "} */}
+                <a href={ResumeFile} download>
+                  <Button variant="dark">
+                    Download CV <GetAppIcon />
+                  </Button>{" "}
+                </a>
               </Carousel.Caption>
             </Carousel.Item>
 
@@ -45,9 +51,18 @@ export default class TopCarousel extends Component {
               <Carousel.Caption>
                 <br></br>
                 <h2>I like to build things</h2>
-                <Button variant="dark">
-                  See Projects <VisibilityIcon />
-                </Button>{" "}
+                <Link
+                  to="projects"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <Button variant="dark">
+                    {" "}
+                    See Projects <VisibilityIcon />
+                  </Button>{" "}
+                </Link>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

@@ -65,34 +65,23 @@ export default class Sidebar extends Component {
                   Contact
                 </Link>
               </Nav.Link>
-
-              {/* <Nav.Link href="about">About</Nav.Link> */}
-              {/* <Nav.Link href="#">Projects</Nav.Link> */}
-              {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
-
-              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
             </Nav>
             <Nav>
-              <Nav.Link href="https://github.com/nickfurk">
+              <Nav.Link
+                onClick={() =>
+                  window.open("https://github.com/nickfurk", "_blank")
+                }
+              >
                 <GitHubIcon />
               </Nav.Link>
-              <Nav.Link href="#deets">
+
+              <Nav.Link
+                onClick={() =>
+                  window.open("https://github.com/nickfurk", "_blank")
+                }
+              >
                 <LinkedInIcon />
               </Nav.Link>
-
-              {/* <Nav.Link eventKey={2} href="#memes">
-              LinkedIn
-            </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

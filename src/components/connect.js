@@ -15,10 +15,19 @@ export default class Connect extends Component {
           <EmojiPeopleIcon />
         </h1>
 
-        <Button variant="secondary" className="connect-buttons">
+        <Button
+          variant="secondary"
+          className="connect-buttons"
+          onClick={() => window.open("https://github.com/nickfurk", "_blank")}
+        >
           <GitHubIcon /> GitHub
         </Button>
-        <Button variant="secondary" className="connect-buttons">
+
+        <Button
+          variant="secondary"
+          className="connect-buttons"
+          onClick={() => window.open("https://github.com/nickfurk", "_blank")}
+        >
           <LinkedInIcon /> LinkedIn
         </Button>
         <br></br>
