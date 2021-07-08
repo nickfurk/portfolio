@@ -77,7 +77,10 @@ export default class Sidebar extends Component {
 
               <Nav.Link
                 onClick={() =>
-                  window.open("https://github.com/nickfurk", "_blank")
+                  window.open(
+                    "https://www.linkedin.com/in/aprilcheng419/",
+                    "_blank"
+                  )
                 }
               >
                 <LinkedInIcon />

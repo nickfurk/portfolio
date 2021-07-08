@@ -5,6 +5,10 @@
 
 .task-description > li {
   text-align: left;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 .source-code-button,
@@ -21,4 +25,12 @@
   width: 95%;
   margin: auto;
   margin-bottom: 1%;
+}
+
+/* li:nth-child(even) {
+  color: rgb(109, 105, 105);
+} */
+
+.tech-stack-line {
+  color: rgb(17, 17, 145);
 }

@@ -26,7 +26,9 @@ export default class Connect extends Component {
         <Button
           variant="secondary"
           className="connect-buttons"
-          onClick={() => window.open("https://github.com/nickfurk", "_blank")}
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/aprilcheng419/", "_blank")
+          }
         >
           <LinkedInIcon /> LinkedIn
         </Button>

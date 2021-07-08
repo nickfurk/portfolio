@@ -11,6 +11,7 @@ import {
   scroller,
 } from "react-scroll";
 import FaceIcon from "@material-ui/icons/Face";
+import MapleLeaf from "../images/maple-leaf.png";
 
 export default class About extends Component {
   render() {
@@ -37,10 +38,15 @@ export default class About extends Component {
                 I am a <b>Computer Systems Technology</b> student at BCIT with
                 the aspiration to build great things. With 5 years of sales and
                 marketing experience in the tech industry, I know that{" "}
-                <b>a well built product sells itself</b>. Being tired of selling
-                products that cannot meet customers technical need, I've decided
-                to change career path so that I could create things that is
-                useful and impactful.
+                <b>a well built product sells itself</b>. I've decided to change
+                career path so that I could create things that is useful and
+                impactful.
+              </p>
+
+              <p>
+                <img src={MapleLeaf} className="maple"></img> Canadian citizen |
+                British Columbia, Greater Vancouver area{" "}
+                <img src={MapleLeaf} className="maple"></img>
               </p>
             </div>
           </div>

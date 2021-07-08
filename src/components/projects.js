@@ -12,12 +12,14 @@ import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import FlareIcon from "@material-ui/icons/Flare";
 import "../css/projects.css";
 import { GlassMagnifier } from "react-image-magnifiers";
 import TreeDemo1 from "../images/treedemo1.png";
 import TreeDemo2 from "../images/treedemo2.png";
 import CapWiseDemo from "../images/capwise-demo.png";
-import FlareIcon from "@material-ui/icons/Flare";
+import BookManager1 from "../images/bookmanager1.png";
+import BookManager2 from "../images/bookmanager2.png";
 
 export default function SimpleAccordion() {
   return (
@@ -33,6 +35,7 @@ export default function SimpleAccordion() {
             <FlareIcon />
           </h1>
 
+          {/* --- JOB WEB SCRAPPER --- */}
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -54,19 +57,31 @@ export default function SimpleAccordion() {
                 <li>
                   Set daily crawling with schedule tasks (cron) on AWS ECS
                 </li>
-                <li>
+                <li className="tech-stack-line">
                   Tech stack: Python, Beautifulsoup Framework, docker, AWS (ECR,
                   ECS, Fargate)
                 </li>
               </div>
             </AccordionDetails>
+            <p>INSERT ARCHITECTURE</p>
+
             <div>
-              <Button variant="secondary" className="source-code-button">
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/sallyklpoon/CapWise",
+                    "_blank"
+                  )
+                }
+              >
                 Source code
               </Button>
             </div>
           </Accordion>
 
+          {/* --- TREE BIEN --- */}
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -87,7 +102,7 @@ export default function SimpleAccordion() {
                   record. This process reads, writes, and delete data in
                   Firestore
                 </li>
-                <li>
+                <li className="tech-stack-line">
                   Tech stack: React, JavaScript, CSS, Bootstrap, Firebase,
                   Heroku
                 </li>
@@ -114,18 +129,34 @@ export default function SimpleAccordion() {
 
             <div>
               <span>
-                <Button variant="secondary" className="source-code-button">
+                <Button
+                  variant="secondary"
+                  className="source-code-button"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/henrychu111/COMP-2800-Team-DTC-04-Tree-Bien",
+                      "_blank"
+                    )
+                  }
+                >
                   Source code
                 </Button>
               </span>
               <span>
-                <Button variant="secondary" className="view-site">
+                <Button
+                  variant="secondary"
+                  className="view-site"
+                  onClick={() =>
+                    window.open("https://tree-bien.herokuapp.com/", "_blank")
+                  }
+                >
                   View site
                 </Button>
               </span>
             </div>
           </Accordion>
 
+          {/* --- CAPWISE --- */}
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -147,7 +178,9 @@ export default function SimpleAccordion() {
                   change percentages, whilekeeping a tab on all promotions using
                   filter
                 </li>
-                <li>Tech stack: JavaScript, HTML/CSS, Bootstrap, Firebase</li>
+                <li className="tech-stack-line">
+                  Tech stack: JavaScript, HTML/CSS, Bootstrap, Firebase
+                </li>
               </div>
             </AccordionDetails>
 
@@ -161,125 +194,167 @@ export default function SimpleAccordion() {
             </div>
 
             <div>
-              <Button variant="secondary" className="source-code-button">
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/sallyklpoon/CapWise",
+                    "_blank"
+                  )
+                }
+              >
                 Source code
               </Button>
-              <Button variant="secondary" className="view-site">
+              <Button
+                variant="secondary"
+                className="view-site"
+                onClick={() =>
+                  window.open("https://capwise-fac45.web.app/", "_blank")
+                }
+              >
                 View site
               </Button>
             </div>
           </Accordion>
 
+          {/* --- BOOK MANAGER --- */}
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Library Sorter</h6>
+              <h6>Book Manager</h6>
             </AccordionSummary>
             <AccordionDetails>
-              <div>
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
+              <div className="task-description">
+                <li>Command line application to manage book collection</li>
+                <li>
+                  Application allows user to search for a books by author,
+                  title, publisher, shelf, category, or subject. The user can
+                  move book from one shelf to another and have the changes saved
+                  as a json file when exiting
+                </li>
+                <li>
+                  Application detects if there is a json file before starting,
+                  if there is an existing json file then it reads from it, else
+                  opens excel file
+                </li>
+                <li className="tech-stack-line">Tech stack: Python</li>
               </div>
             </AccordionDetails>
+
+            <div className="demo-images">
+              <p>Search for a book:</p>
+              <GlassMagnifier
+                imageSrc={BookManager1}
+                magnifierSize="50%"
+                square="true"
+                imageAlt="Book-Manager-Search"
+              />
+            </div>
+            <br></br>
+            <div className="demo-images">
+              <p>Move a book to another shelf:</p>
+
+              <GlassMagnifier
+                imageSrc={BookManager2}
+                magnifierSize="50%"
+                square="true"
+                imageAlt="Book-Manager-Move"
+              />
+            </div>
             <div>
-              <Button variant="secondary" className="source-code-button">
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/nickfurk/book-manager",
+                    "_blank"
+                  )
+                }
+              >
                 Source code
               </Button>
             </div>
           </Accordion>
 
+          {/* --- BLACKJACK --- */}
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Library Sorter</h6>
+              <h6>Blackjack</h6>
             </AccordionSummary>
             <AccordionDetails>
-              <div>
+              <div className="task-description">
                 <li>one</li>
                 <li>one</li>
                 <li>one</li>
-                <li>one</li>
+                <li className="tech-stack-line">Tech stack: Python</li>
               </div>
             </AccordionDetails>
+
+            <div className="demo-images">
+              <p>Search for a book:</p>
+              <GlassMagnifier
+                imageSrc={BookManager1}
+                magnifierSize="50%"
+                square="true"
+                imageAlt="Book-Manager-Search"
+              />
+            </div>
+            <br></br>
+            <div className="demo-images">
+              <p>Move a book to another shelf:</p>
+
+              <GlassMagnifier
+                imageSrc={BookManager2}
+                magnifierSize="50%"
+                square="true"
+                imageAlt="Book-Manager-Move"
+              />
+            </div>
             <div>
-              <Button variant="secondary" className="source-code-button">
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open("https://github.com/nickfurk/Blackjack", "_blank")
+                }
+              >
                 Source code
               </Button>
             </div>
           </Accordion>
 
+          {/* --- TEXT BASED ADVENTURE --- */}
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Library Sorter</h6>
+              <h6>Text Based Adventure</h6>
             </AccordionSummary>
             <AccordionDetails>
               <div>
                 <li>one</li>
                 <li>one</li>
                 <li>one</li>
-                <li>one</li>
+                <li className="tech-stack-line">one</li>
               </div>
             </AccordionDetails>
             <div>
-              <Button variant="secondary" className="source-code-button">
-                Source code
-              </Button>
-            </div>
-          </Accordion>
-
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h6>Library Sorter</h6>
-            </AccordionSummary>
-            <AccordionDetails>
-              <div>
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
-              </div>
-            </AccordionDetails>
-            <div>
-              <Button variant="secondary" className="source-code-button">
-                Source code
-              </Button>
-            </div>
-          </Accordion>
-
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h6>Library Sorter</h6>
-            </AccordionSummary>
-            <AccordionDetails>
-              <div>
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
-              </div>
-            </AccordionDetails>
-            <div>
-              <Button variant="secondary" className="source-code-button">
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() => window.open("link", "_blank")}
+              >
                 Source code
               </Button>
             </div>
