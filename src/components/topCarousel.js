@@ -14,6 +14,7 @@ import {
   scroller,
 } from "react-scroll";
 import ResumeFile from "../downloadFile/AprilCheng_Resume.pdf";
+import "../css/carousel.css";
 
 export default class TopCarousel extends Component {
   render() {
@@ -29,7 +30,7 @@ export default class TopCarousel extends Component {
               />
               <Carousel.Caption>
                 <h2>
-                  <Typist>Hello, I'm April!</Typist>
+                  <Typist className="typing">Hello, I'm April!</Typist>
                 </h2>
                 {/* <Button variant="dark">
                   Download CV <GetAppIcon />
@@ -50,7 +51,7 @@ export default class TopCarousel extends Component {
               />
               <Carousel.Caption>
                 <br></br>
-                <h2>I like to build things</h2>
+                <h2 className="typing">I like to build things</h2>
                 <Link
                   to="projects"
                   activeClass="active"
