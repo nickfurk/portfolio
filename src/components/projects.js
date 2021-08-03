@@ -20,6 +20,8 @@ import TreeDemo2 from "../images/treedemo2.png";
 import CapWiseDemo from "../images/capwise-demo.png";
 import BookManager1 from "../images/bookmanager1.png";
 import BookManager2 from "../images/bookmanager2.png";
+import JobScrapperArchitecture from "../images/jobwebscrapper-architecture.png";
+import JobScrapperRDS from "../images/webscrapper-rds.png";
 
 export default function SimpleAccordion() {
   return (
@@ -63,7 +65,27 @@ export default function SimpleAccordion() {
                 </li>
               </div>
             </AccordionDetails>
-            <p>INSERT ARCHITECTURE</p>
+            <br></br>
+            <div className="jobwebscrapper-architecture">
+              <p>Architecture:</p>
+              <GlassMagnifier
+                imageSrc={JobScrapperArchitecture}
+                magnifierSize="50%"
+                square="true"
+                imageAlt="Job Webscrapper Architecture"
+              />
+            </div>
+            <br></br>
+            <div className="demo-images">
+              <p>Portion of the MySql table:</p>
+
+              <GlassMagnifier
+                imageSrc={JobScrapperRDS}
+                magnifierSize="50%"
+                square="true"
+                imageAlt="database-table"
+              />
+            </div>
 
             <div>
               <Button
@@ -71,7 +93,7 @@ export default function SimpleAccordion() {
                 className="source-code-button"
                 onClick={() =>
                   window.open(
-                    "https://github.com/sallyklpoon/CapWise",
+                    "https://github.com/nickfurk/HKjobs_webscrapper_IT",
                     "_blank"
                   )
                 }
