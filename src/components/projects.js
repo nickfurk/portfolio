@@ -22,6 +22,7 @@ import BookManager1 from "../images/bookmanager1.png";
 import BookManager2 from "../images/bookmanager2.png";
 import JobScrapperArchitecture from "../images/jobwebscrapper-architecture.png";
 import JobScrapperRDS from "../images/webscrapper-rds.png";
+import BlackJackImg from "../images/blackjack-example.png";
 
 export default function SimpleAccordion() {
   return (
@@ -314,33 +315,35 @@ export default function SimpleAccordion() {
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
+                <li>
+                  User plays against the dealer (program) starting with $100 in
+                  the purse. Each round has a minimum bet of $10. Game ends when
+                  one deck of cards (52) runs out OR when the player has not
+                  more money to bet
+                </li>
+                <li>
+                  User decides if they want to hit (get another card) or stand
+                  for each round
+                </li>
+                <li>
+                  Game keeps track of the total wins, loss, ties and money left
+                  for the player
+                </li>
                 <li className="tech-stack-line">Tech stack: Python</li>
               </div>
             </AccordionDetails>
 
-            <div className="demo-images">
-              <p>Search for a book:</p>
+            <div className="demo-images blackjack">
+              <p>Example of a game round:</p>
               <GlassMagnifier
-                imageSrc={BookManager1}
+                imageSrc={BlackJackImg}
                 magnifierSize="50%"
                 square="true"
                 imageAlt="Book-Manager-Search"
               />
             </div>
             <br></br>
-            <div className="demo-images">
-              <p>Move a book to another shelf:</p>
 
-              <GlassMagnifier
-                imageSrc={BookManager2}
-                magnifierSize="50%"
-                square="true"
-                imageAlt="Book-Manager-Move"
-              />
-            </div>
             <div>
               <Button
                 variant="secondary"
@@ -354,28 +357,34 @@ export default function SimpleAccordion() {
             </div>
           </Accordion>
 
-          {/* --- TEXT BASED ADVENTURE --- */}
+          {/* --- CURRENT WEBSITE --- */}
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Text Based Adventure</h6>
+              <h6>Current Portfolio Website</h6>
             </AccordionSummary>
             <AccordionDetails>
-              <div>
-                <li>one</li>
-                <li>one</li>
-                <li>one</li>
-                <li className="tech-stack-line">one</li>
+              <div className="task-description">
+                <li>
+                  React based website built with Bootstrap and Material-UI
+                  frameworks
+                </li>
+                <li>Launched on AWS using...</li>
+                <li className="tech-stack-line">
+                  Tech stack: React, Bootstrap, Material-UI{" "}
+                </li>
               </div>
             </AccordionDetails>
             <div>
               <Button
                 variant="secondary"
                 className="source-code-button"
-                onClick={() => window.open("link", "_blank")}
+                onClick={() =>
+                  window.open("https://github.com/nickfurk/portfolio", "_blank")
+                }
               >
                 Source code
               </Button>
