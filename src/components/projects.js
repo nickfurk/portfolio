@@ -38,6 +38,40 @@ export default function SimpleAccordion() {
             <FlareIcon />
           </h1>
 
+          {/* --- CURRENT WEBSITE --- */}
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h6>Current Portfolio Website</h6>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="task-description">
+                <li>
+                  React based website built with Bootstrap and Material-UI
+                  frameworks
+                </li>
+                <li>Launched on AWS using...</li>
+                <li className="tech-stack-line">
+                  Tech stack: React, Bootstrap, Material-UI{" "}
+                </li>
+              </div>
+            </AccordionDetails>
+            <div>
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open("https://github.com/nickfurk/portfolio", "_blank")
+                }
+              >
+                Source code
+              </Button>
+            </div>
+          </Accordion>
+
           {/* --- JOB WEB SCRAPPER --- */}
           <Accordion>
             <AccordionSummary
@@ -350,40 +384,6 @@ export default function SimpleAccordion() {
                 className="source-code-button"
                 onClick={() =>
                   window.open("https://github.com/nickfurk/Blackjack", "_blank")
-                }
-              >
-                Source code
-              </Button>
-            </div>
-          </Accordion>
-
-          {/* --- CURRENT WEBSITE --- */}
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h6>Current Portfolio Website</h6>
-            </AccordionSummary>
-            <AccordionDetails>
-              <div className="task-description">
-                <li>
-                  React based website built with Bootstrap and Material-UI
-                  frameworks
-                </li>
-                <li>Launched on AWS using...</li>
-                <li className="tech-stack-line">
-                  Tech stack: React, Bootstrap, Material-UI{" "}
-                </li>
-              </div>
-            </AccordionDetails>
-            <div>
-              <Button
-                variant="secondary"
-                className="source-code-button"
-                onClick={() =>
-                  window.open("https://github.com/nickfurk/portfolio", "_blank")
                 }
               >
                 Source code
