@@ -3,8 +3,6 @@ phases:
   pre_build:
     commands:
       - ls -la
-      - echo "Change directory"
-      - cd portfolio
       - echo "Install npm dependencies"
       - npm install
   build:
