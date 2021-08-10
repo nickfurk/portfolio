@@ -14,7 +14,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FlareIcon from "@material-ui/icons/Flare";
 import "../css/projects.css";
-import { GlassMagnifier } from "react-image-magnifiers";
+import { GlassMagnifier, Magnifier } from "react-image-magnifiers";
 import TreeDemo1 from "../images/treedemo1.png";
 import TreeDemo2 from "../images/treedemo2.png";
 import CapWiseDemo from "../images/capwise-demo.png";
@@ -23,6 +23,7 @@ import BookManager2 from "../images/bookmanager2.png";
 import JobScrapperArchitecture from "../images/jobwebscrapper-architecture.png";
 import JobScrapperRDS from "../images/webscrapper-rds.png";
 import BlackJackImg from "../images/blackjack-example.png";
+import PortfolioArchitecture from "../images/portfolio-architecture.png";
 
 export default function SimpleAccordion() {
   return (
@@ -45,20 +46,38 @@ export default function SimpleAccordion() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Current Portfolio Website</h6>
+              <h6>aprilc.xyz (Current Website)</h6>
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
                 <li>
-                  React based website built with Bootstrap and Material-UI
+                  Responsive React web app built with Bootstrap and Material-UI
                   frameworks
                 </li>
-                <li>Launched on AWS using...</li>
+                <li>
+                  Deployed on AWS using CodeBuild which automatically helps
+                  compile source code when new updates are pushed onto GitHub.
+                  The objects are then updated in a S3 bucket
+                </li>
+                <li>
+                  Used CloudFlare for content network delivery (CDN) to improve
+                  website load time, as well as CloudFlare's Secure Socket Layer
+                  (SSL) for ensuring secure connections
+                </li>
                 <li className="tech-stack-line">
-                  Tech stack: React, Bootstrap, Material-UI{" "}
+                  Tech stack: React, Bootstrap and Material-UI frameworks, AWS
+                  CodeBuild and S3, CloudFlare CDN{" "}
                 </li>
               </div>
             </AccordionDetails>
+            <br></br>
+            <div className="portfolio-architecture">
+              <p>Architecture:</p>
+              <Magnifier
+                imageSrc={PortfolioArchitecture}
+                imageAlt="Portfolio Website Architecture"
+              />
+            </div>
             <div>
               <Button
                 variant="secondary"
@@ -84,18 +103,24 @@ export default function SimpleAccordion() {
             <AccordionDetails>
               <div className="task-description">
                 <li>
-                  Web scrapper crawls a Hong Kong governemnt website for IT
-                  related jobs. Script stored in a docker image{" "}
+                  Web scrapper crawls a Hong Kong job website (www2.jobs.gov.hk)
+                  for IT related jobs on a daily basis{" "}
                 </li>
                 <li>
-                  Docker image launched on AWS ECS using Fargate and crawled
-                  data is stored in AWS RDS (MySql)
+                  Python script used Beautifulsoup library to extract data from
+                  HTML webpages. Application code is stored in a Docker image
                 </li>
                 <li>
-                  Set daily crawling with schedule tasks (cron) on AWS ECS
+                  Application code is stored in a Docker image and is deployed
+                  on AWS ECS using Fargate. Extracted data is stored in AWS RDS
+                  (MySql)
+                </li>
+
+                <li>
+                  Daily crawling is set with schedule tasks (cron) on AWS ECS
                 </li>
                 <li className="tech-stack-line">
-                  Tech stack: Python, Beautifulsoup Framework, docker, AWS (ECR,
+                  Tech stack: Python, Beautifulsoup Framework, Docker, AWS (ECR,
                   ECS, Fargate)
                 </li>
               </div>
@@ -103,10 +128,8 @@ export default function SimpleAccordion() {
             <br></br>
             <div className="jobwebscrapper-architecture">
               <p>Architecture:</p>
-              <GlassMagnifier
+              <Magnifier
                 imageSrc={JobScrapperArchitecture}
-                magnifierSize="50%"
-                square="true"
                 imageAlt="Job Webscrapper Architecture"
               />
             </div>
@@ -114,12 +137,7 @@ export default function SimpleAccordion() {
             <div className="demo-images">
               <p>Portion of the MySql table:</p>
 
-              <GlassMagnifier
-                imageSrc={JobScrapperRDS}
-                magnifierSize="50%"
-                square="true"
-                imageAlt="database-table"
-              />
+              <Magnifier imageSrc={JobScrapperRDS} imageAlt="database-table" />
             </div>
 
             <div>
@@ -150,14 +168,14 @@ export default function SimpleAccordion() {
             <AccordionDetails>
               <div className="task-description">
                 <li>
-                  Used scrum agile methodology for the development of a mobile
-                  application which enables users to find locations to plant
-                  trees and record data about the tree
+                  Used scrum agile methodology, in a group of 4, for the
+                  development of a mobile application which enables users to
+                  find locations to plant trees and record data about the tree
                 </li>
                 <li>
                   Built the add tree data, update tree data, and delete tree
-                  record. This process reads, writes, and delete data in
-                  Firestore
+                  features. These processes requires read, write, and delete
+                  data in Firestore
                 </li>
                 <li className="tech-stack-line">
                   Tech stack: React, JavaScript, CSS, Bootstrap, Firebase,
@@ -167,22 +185,30 @@ export default function SimpleAccordion() {
             </AccordionDetails>
 
             <div className="demo-images">
+              <Magnifier imageSrc={TreeDemo1} imageAlt="Tree-Bien-Demo-1" />
+            </div>
+
+            {/* <div className="demo-images">
               <GlassMagnifier
                 imageSrc={TreeDemo1}
                 magnifierSize="50%"
                 square="true"
                 imageAlt="Tree-Bien-Demo-1"
               />
-            </div>
+            </div> */}
 
             <div className="demo-images">
+              <Magnifier imageSrc={TreeDemo2} imageAlt="Tree-Bien-Demo-2" />
+            </div>
+
+            {/* <div className="demo-images">
               <GlassMagnifier
                 imageSrc={TreeDemo2}
                 magnifierSize="50%"
                 square="true"
                 imageAlt="Tree-Bien-Demo-2"
               />
-            </div>
+            </div> */}
 
             <div>
               <span>
@@ -225,16 +251,18 @@ export default function SimpleAccordion() {
             <AccordionDetails>
               <div className="task-description">
                 <li>
-                  Used agile sprint for the development of an application that
-                  enables users tokeep track of the number of people in the
-                  store, while using the countnumber for marketing insight
+                  Development of an application, in a group of 3, that enables
+                  the user to keep track of the number of people in a retail
+                  space, while using the same count number for marketing insight
                 </li>
                 <li>
                   Built the marketing insight feature which enables the user to
-                  see how theirpromotion has affected foot traffic by displaying
-                  change percentages, whilekeeping a tab on all promotions using
-                  filter
+                  add new promotions, see promotions' performance, filter
+                  promotions by relative date, and delete promotions. Scripts
+                  were written to help calculate traffic change, as well as
+                  querying, updating, and deleting data from FireStore
                 </li>
+
                 <li className="tech-stack-line">
                   Tech stack: JavaScript, HTML/CSS, Bootstrap, Firebase
                 </li>
@@ -242,12 +270,7 @@ export default function SimpleAccordion() {
             </AccordionDetails>
 
             <div className="demo-images">
-              <GlassMagnifier
-                imageSrc={CapWiseDemo}
-                magnifierSize="50%"
-                square="true"
-                imageAlt="Tree-Bien-Demo-2"
-              />
+              <Magnifier imageSrc={CapWiseDemo} imageAlt="Tree-Bien-Demo-2" />
             </div>
 
             <div>
@@ -304,10 +327,8 @@ export default function SimpleAccordion() {
 
             <div className="demo-images">
               <p>Search for a book:</p>
-              <GlassMagnifier
+              <Magnifier
                 imageSrc={BookManager1}
-                magnifierSize="50%"
-                square="true"
                 imageAlt="Book-Manager-Search"
               />
             </div>
@@ -315,12 +336,7 @@ export default function SimpleAccordion() {
             <div className="demo-images">
               <p>Move a book to another shelf:</p>
 
-              <GlassMagnifier
-                imageSrc={BookManager2}
-                magnifierSize="50%"
-                square="true"
-                imageAlt="Book-Manager-Move"
-              />
+              <Magnifier imageSrc={BookManager2} imageAlt="Book-Manager-Move" />
             </div>
             <div>
               <Button
@@ -369,10 +385,8 @@ export default function SimpleAccordion() {
 
             <div className="demo-images blackjack">
               <p>Example of a game round:</p>
-              <GlassMagnifier
+              <Magnifier
                 imageSrc={BlackJackImg}
-                magnifierSize="50%"
-                square="true"
                 imageAlt="Book-Manager-Search"
               />
             </div>

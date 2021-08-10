@@ -7,7 +7,7 @@
   text-align: left;
   list-style-type: disc;
   list-style-position: inside;
-  text-indent: -1em;
+  text-indent: -1.4em;
   padding-left: 1em;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .jobwebscrapper-architecture {
-  width: 55%;
+  width: 65%;
   margin: auto;
   margin-bottom: 1%;
 }
@@ -43,4 +43,10 @@
 
 .blackjack {
   width: 55%;
+}
+
+.portfolio-architecture {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3%;
 }
