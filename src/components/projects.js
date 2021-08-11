@@ -170,7 +170,8 @@ export default function SimpleAccordion() {
                 <li>
                   Used scrum agile methodology, in a group of 4, for the
                   development of a mobile application which enables users to
-                  find locations to plant trees and record data about the tree
+                  find locations to plant trees and record data about their
+                  trees
                 </li>
                 <li>
                   Built the add tree data, update tree data, and delete tree

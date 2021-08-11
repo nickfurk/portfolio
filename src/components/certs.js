@@ -18,10 +18,10 @@ export default class Certs extends Component {
               <Col sm={2}>AWS: </Col>
               <Col sm={8}>
                 <Badge pill variant="info">
-                  Certified Solution Architect - Associate (exp. 2020)
+                  Certified Solution Architect - Associate (expired 2020)
                 </Badge>{" "}
                 <Badge pill variant="info">
-                  Certified Solution Architect - Professional (exp. 2020)
+                  Certified Solution Architect - Professional (expired 2020)
                 </Badge>
               </Col>
             </Row>

@@ -62,6 +62,9 @@ export default class techStack extends Component {
                 <Badge pill variant="dark">
                   Bootstrap
                 </Badge>{" "}
+                <Badge pill variant="dark">
+                  Material-UI
+                </Badge>{" "}
               </Col>
             </Row>
 
@@ -78,6 +81,9 @@ export default class techStack extends Component {
                 </Badge>{" "}
                 <Badge pill variant="secondary">
                   Basecamp
+                </Badge>{" "}
+                <Badge pill variant="secondary">
+                  Trello
                 </Badge>{" "}
               </Col>
             </Row>

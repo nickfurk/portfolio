@@ -43,7 +43,7 @@ export default class About extends Component {
 
               <p>
                 <img src={MapleLeaf} className="maple"></img> Canadian citizen |
-                Residing in Greater Vancouver area{" "}
+                Greater Vancouver area{" "}
                 <img src={MapleLeaf} className="maple"></img>
               </p>
             </div>
