@@ -108,7 +108,7 @@ export default function SimpleAccordion() {
                 </li>
                 <li>
                   Python script used Beautifulsoup library to extract data from
-                  HTML webpages. Application code is stored in a Docker image
+                  HTML webpages
                 </li>
                 <li>
                   Application code is stored in a Docker image and is deployed

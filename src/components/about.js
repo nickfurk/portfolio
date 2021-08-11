@@ -35,17 +35,15 @@ export default class About extends Component {
 
             <div>
               <p className="who-am-I">
-                I am a <b>Computer Systems Technology</b> student at BCIT with
-                the aspiration to build great things. With 5 years of sales and
-                marketing experience in the tech industry, I know that{" "}
-                <b>a well built product sells itself</b>. I've decided to change
-                career path so that I could create things that is useful and
-                impactful.
+                I am a first year <b>Computer Systems Technology</b> student at
+                BCIT. Currently transitioning to software engineering from
+                business development. I have a strong desire to build useful
+                products to solve real problems that are affecting many people.
               </p>
 
               <p>
                 <img src={MapleLeaf} className="maple"></img> Canadian citizen |
-                British Columbia, Greater Vancouver area{" "}
+                Residing in Greater Vancouver area{" "}
                 <img src={MapleLeaf} className="maple"></img>
               </p>
             </div>
