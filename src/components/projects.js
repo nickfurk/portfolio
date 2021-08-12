@@ -40,7 +40,7 @@ export default function SimpleAccordion() {
           </h1>
 
           {/* --- CURRENT WEBSITE --- */}
-          <Accordion>
+          <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -92,20 +92,27 @@ export default function SimpleAccordion() {
             </div>
           </Accordion>
 
-          {/* --- JOB WEB SCRAPPER --- */}
-          <Accordion>
+          {/* --- JOB WEB SCRAPER --- */}
+          <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Job Web Scrapper</h6>
+              <h6>Job Web Scraper</h6>
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
                 <li>
-                  Web scrapper crawls a Hong Kong job website (www2.jobs.gov.hk)
-                  for IT related jobs on a daily basis{" "}
+                  Web scraper extracts IT related job postings on a daily basis
+                  from a{" "}
+                  <a
+                    href="https://www2.jobs.gov.hk/0/en/"
+                    target="_blank"
+                    id="job-link"
+                  >
+                    job board website
+                  </a>{" "}
                 </li>
                 <li>
                   Python script used Beautifulsoup library to extract data from
@@ -114,7 +121,7 @@ export default function SimpleAccordion() {
                 <li>
                   Application code is stored in a Docker image and is deployed
                   on AWS ECS using Fargate. Extracted data is stored in AWS RDS
-                  (MySql)
+                  (MySQL)
                 </li>
 
                 <li>
@@ -158,7 +165,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- TREE BIEN --- */}
-          <Accordion>
+          <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -169,15 +176,17 @@ export default function SimpleAccordion() {
             <AccordionDetails>
               <div className="task-description">
                 <li>
-                  Used scrum agile methodology, in a group of 4, for the
-                  development of a mobile application which enables users to
-                  find locations to plant trees and record data about their
+                  React mobile web app that allows users to find available
+                  locations to plant trees and record/update data of planted
                   trees
                 </li>
                 <li>
-                  Built the add tree data, update tree data, and delete tree
-                  features. These processes requires read, write, and delete
-                  data in Firestore
+                  Collaborated in a four-membered team using scrum agile
+                  methodology
+                </li>
+                <li>
+                  Implemented user stories for creating, editing, and deleting
+                  of tree data stored in Firestore
                 </li>
                 <li className="tech-stack-line">
                   Tech stack: React, JavaScript, CSS, Bootstrap, Firebase,
@@ -242,7 +251,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- CAPWISE --- */}
-          <Accordion>
+          <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -253,16 +262,15 @@ export default function SimpleAccordion() {
             <AccordionDetails>
               <div className="task-description">
                 <li>
-                  Development of an application, in a group of 3, that enables
-                  the user to keep track of the number of people in a retail
-                  space, while using the same count number for marketing insight
+                  JavaScript web app that tracks the number of people in a
+                  retail space, developed in collaboration with two other team
+                  members
                 </li>
                 <li>
                   Built the marketing insight feature which enables the user to
-                  add new promotions, see promotions' performance, filter
-                  promotions by relative date, and delete promotions. Scripts
-                  were written to help calculate traffic change, as well as
-                  querying, updating, and deleting data from FireStore
+                  add new promotions, view promotion performance as measured by
+                  traffic change, filter promotions by relative date, and delete
+                  promotions
                 </li>
 
                 <li className="tech-stack-line">
@@ -301,7 +309,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- BOOK MANAGER --- */}
-          <Accordion>
+          <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -357,7 +365,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- BLACKJACK --- */}
-          <Accordion>
+          <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"

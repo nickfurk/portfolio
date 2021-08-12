@@ -50,3 +50,8 @@
   margin: auto;
   margin-bottom: 3%;
 }
+
+#job-link {
+  color: black;
+  text-decoration: underline;
+}
