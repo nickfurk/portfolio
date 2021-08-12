@@ -57,7 +57,8 @@ export default function SimpleAccordion() {
                 <li>
                   Deployed on AWS using CodeBuild which automatically helps
                   compile source code when new updates are pushed onto GitHub.
-                  The objects are then updated in a S3 bucket
+                  The objects are then updated in a S3 bucket which essentially
+                  updates the website
                 </li>
                 <li>
                   Used CloudFlare for content network delivery (CDN) to improve
