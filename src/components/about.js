@@ -35,11 +35,10 @@ export default class About extends Component {
 
             <div>
               <p className="who-am-I">
-                I am a <b>Computer Systems Technology</b> student at BCIT.
-                Currently transitioning to software engineering from business
-                development. With my strong business acumen and desire to build
-                useful products, I desire to solve real problems that are
-                affecting many people.
+                I am a <b>Computer Systems Technology</b> student at BCIT, and
+                was a business development manager at an AWS consulting partner.
+                Transitioning from a business role to a technical role, I aspire
+                to build products to solve customers' problems.
               </p>
 
               <p>

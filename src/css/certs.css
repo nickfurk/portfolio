@@ -1,4 +1,10 @@
 .cert-list {
   text-align: left;
   margin-left: 3%;
+  font-size: 1.2em;
+}
+
+.project-badge {
+  color: white;
+  font-size: 1.1em;
 }

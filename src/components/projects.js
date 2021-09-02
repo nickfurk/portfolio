@@ -24,6 +24,9 @@ import JobScrapperArchitecture from "../images/jobwebscrapper-architecture.png";
 import JobScrapperRDS from "../images/webscrapper-rds.png";
 import BlackJackImg from "../images/blackjack-example.png";
 import PortfolioArchitecture from "../images/portfolio-architecture.png";
+import VisibilityIcon from "@material-ui/icons/Visibility";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import BorderColorIcon from "@material-ui/icons/BorderColor";
 
 export default function SimpleAccordion() {
   return (
@@ -46,7 +49,9 @@ export default function SimpleAccordion() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>aprilc.xyz (Current Website)</h6>
+              <Badge pill variant="info" className="project-badge">
+                aprilc.xyz (Current Website)
+              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -66,8 +71,10 @@ export default function SimpleAccordion() {
                   (SSL) for ensuring secure connections
                 </li>
                 <li className="tech-stack-line">
-                  Tech stack: React, Bootstrap and Material-UI frameworks, AWS
-                  CodeBuild and S3, CloudFlare CDN{" "}
+                  <span>
+                    Tech stack: React, Bootstrap and Material-UI frameworks, AWS
+                    CodeBuild and S3, CloudFlare CDN{" "}
+                  </span>
                 </li>
               </div>
             </AccordionDetails>
@@ -87,7 +94,7 @@ export default function SimpleAccordion() {
                   window.open("https://github.com/nickfurk/portfolio", "_blank")
                 }
               >
-                Source code
+                <GitHubIcon /> Source code
               </Button>
             </div>
           </Accordion>
@@ -99,7 +106,9 @@ export default function SimpleAccordion() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Job Web Scraper</h6>
+              <Badge pill variant="info" className="project-badge">
+                Job Web Scraper
+              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -128,8 +137,10 @@ export default function SimpleAccordion() {
                   Daily crawling is set with schedule tasks (cron) on AWS ECS
                 </li>
                 <li className="tech-stack-line">
-                  Tech stack: Python, Beautifulsoup Framework, Docker, AWS (ECR,
-                  ECS, Fargate)
+                  <span>
+                    Tech stack: Python, Beautifulsoup Framework, Docker, AWS
+                    (ECR, ECS, Fargate, RDS)
+                  </span>
                 </li>
               </div>
             </AccordionDetails>
@@ -154,12 +165,12 @@ export default function SimpleAccordion() {
                 className="source-code-button"
                 onClick={() =>
                   window.open(
-                    "https://github.com/nickfurk/HKjobs_webscrapper_IT",
+                    "https://github.com/nickfurk/job_webscraper_IT",
                     "_blank"
                   )
                 }
               >
-                Source code
+                <GitHubIcon /> Source code
               </Button>
             </div>
           </Accordion>
@@ -171,7 +182,9 @@ export default function SimpleAccordion() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Tree Bien (React Web App)</h6>
+              <Badge pill variant="info" className="project-badge">
+                Tree Bien (React Web App)
+              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -189,8 +202,10 @@ export default function SimpleAccordion() {
                   of tree data stored in Firestore
                 </li>
                 <li className="tech-stack-line">
-                  Tech stack: React, JavaScript, CSS, Bootstrap, Firebase,
-                  Heroku
+                  <span>
+                    Tech stack: React, JavaScript, CSS, Bootstrap, Firebase,
+                    Heroku
+                  </span>
                 </li>
               </div>
             </AccordionDetails>
@@ -233,7 +248,7 @@ export default function SimpleAccordion() {
                     )
                   }
                 >
-                  Source code
+                  <GitHubIcon /> Source code
                 </Button>
               </span>
               <span>
@@ -241,10 +256,13 @@ export default function SimpleAccordion() {
                   variant="secondary"
                   className="view-site"
                   onClick={() =>
-                    window.open("https://tree-bien.herokuapp.com/", "_blank")
+                    window.open(
+                      "https://trello.com/b/X2n0ikYd/dtc-team-04",
+                      "_blank"
+                    )
                   }
                 >
-                  View site
+                  <BorderColorIcon /> Trello
                 </Button>
               </span>
             </div>
@@ -257,7 +275,9 @@ export default function SimpleAccordion() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>CapWise (Occupancy Counter)</h6>
+              <Badge pill variant="info" className="project-badge">
+                CapWise (Occupancy Counter)
+              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -274,7 +294,9 @@ export default function SimpleAccordion() {
                 </li>
 
                 <li className="tech-stack-line">
-                  Tech stack: JavaScript, HTML/CSS, Bootstrap, Firebase
+                  <span>
+                    Tech stack: JavaScript, HTML/CSS, Bootstrap, Firebase
+                  </span>
                 </li>
               </div>
             </AccordionDetails>
@@ -294,7 +316,7 @@ export default function SimpleAccordion() {
                   )
                 }
               >
-                Source code
+                <GitHubIcon /> Source code
               </Button>
               <Button
                 variant="secondary"
@@ -303,7 +325,8 @@ export default function SimpleAccordion() {
                   window.open("https://capwise-fac45.web.app/", "_blank")
                 }
               >
-                View site
+                {" "}
+                <VisibilityIcon /> View site
               </Button>
             </div>
           </Accordion>
@@ -315,7 +338,9 @@ export default function SimpleAccordion() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Book Manager</h6>
+              <Badge pill variant="info" className="project-badge">
+                Book Manager
+              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -331,7 +356,10 @@ export default function SimpleAccordion() {
                   if there is an existing json file then it reads from it, else
                   opens excel file
                 </li>
-                <li className="tech-stack-line">Tech stack: Python</li>
+
+                <li className="tech-stack-line">
+                  <span>Tech stack: Python </span>
+                </li>
               </div>
             </AccordionDetails>
 
@@ -359,19 +387,21 @@ export default function SimpleAccordion() {
                   )
                 }
               >
-                Source code
+                <GitHubIcon /> Source code
               </Button>
             </div>
           </Accordion>
 
           {/* --- BLACKJACK --- */}
-          <Accordion defaultExpanded="true">
+          {/* <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h6>Blackjack</h6>
+              <Badge pill variant="info" className="project-badge">
+                BlackJack
+              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -389,7 +419,9 @@ export default function SimpleAccordion() {
                   Game keeps track of the total wins, loss, ties and money left
                   for the player
                 </li>
-                <li className="tech-stack-line">Tech stack: Python</li>
+                <li className="tech-stack-line">
+                  <span>Tech stack: Python</span>
+                </li>
               </div>
             </AccordionDetails>
 
@@ -410,10 +442,10 @@ export default function SimpleAccordion() {
                   window.open("https://github.com/nickfurk/Blackjack", "_blank")
                 }
               >
-                Source code
+                <GitHubIcon /> Source code
               </Button>
             </div>
-          </Accordion>
+          </Accordion> */}
         </div>
       </Element>
     </React.Fragment>

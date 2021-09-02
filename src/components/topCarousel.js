@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Carousel, Button } from "react-bootstrap";
 import DemoImage from "../images/demo-image.jpg";
-import AprilImage from "../images/april-pic.jpeg";
+import AprilImage from "../images/canva-pic.png";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import Typist from "react-typist";
@@ -43,7 +43,7 @@ export default class TopCarousel extends Component {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={AprilImage}
@@ -65,7 +65,7 @@ export default class TopCarousel extends Component {
                   </Button>{" "}
                 </Link>
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         </Element>
       </React.Fragment>
