@@ -24,7 +24,7 @@ export default class TopCarousel extends Component {
           <Carousel fade>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 banner"
                 src={AprilImage}
                 alt="Download CV"
               />
