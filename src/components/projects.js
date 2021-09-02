@@ -79,11 +79,16 @@ export default function SimpleAccordion() {
               </div>
             </AccordionDetails>
             <br></br>
-            <div className="portfolio-architecture">
+            <div>
               <p>Architecture:</p>
-              <Magnifier
+              {/* <Magnifier
                 imageSrc={PortfolioArchitecture}
                 imageAlt="Portfolio Website Architecture"
+              /> */}
+              <img
+                src={PortfolioArchitecture}
+                alt="Portfolio Website Architecture"
+                className="portfolio-architecture"
               />
             </div>
             <div>
@@ -147,9 +152,13 @@ export default function SimpleAccordion() {
             <br></br>
             <div className="jobwebscrapper-architecture">
               <p>Architecture:</p>
-              <Magnifier
+              {/* <Magnifier
                 imageSrc={JobScrapperArchitecture}
                 imageAlt="Job Webscrapper Architecture"
+              /> */}
+              <img
+                src={JobScrapperArchitecture}
+                alt="Job Webscraper Architecture"
               />
             </div>
             <br></br>
@@ -210,8 +219,13 @@ export default function SimpleAccordion() {
               </div>
             </AccordionDetails>
 
-            <div className="demo-images">
-              <Magnifier imageSrc={TreeDemo1} imageAlt="Tree-Bien-Demo-1" />
+            <div className="demo-images ">
+              {/* <Magnifier imageSrc={TreeDemo1} imageAlt="Tree-Bien-Demo-1" /> */}
+              <img
+                src={TreeDemo1}
+                alt="Tree-Bien_Demo-1"
+                className="large-images"
+              />
             </div>
 
             {/* <div className="demo-images">
@@ -224,7 +238,12 @@ export default function SimpleAccordion() {
             </div> */}
 
             <div className="demo-images">
-              <Magnifier imageSrc={TreeDemo2} imageAlt="Tree-Bien-Demo-2" />
+              {/* <Magnifier imageSrc={TreeDemo2} imageAlt="Tree-Bien-Demo-2" /> */}
+              <img
+                src={TreeDemo2}
+                alt="Tree-Bien_Demo-2"
+                className="large-images"
+              />
             </div>
 
             {/* <div className="demo-images">
@@ -302,7 +321,12 @@ export default function SimpleAccordion() {
             </AccordionDetails>
 
             <div className="demo-images">
-              <Magnifier imageSrc={CapWiseDemo} imageAlt="Tree-Bien-Demo-2" />
+              {/* <Magnifier imageSrc={CapWiseDemo} imageAlt="CapWise-Demo" /> */}
+              <img
+                src={CapWiseDemo}
+                alt="CapWise-Demo"
+                className="large-images"
+              />
             </div>
 
             <div>
@@ -365,16 +389,26 @@ export default function SimpleAccordion() {
 
             <div className="demo-images">
               <p>Search for a book:</p>
-              <Magnifier
+              {/* <Magnifier
                 imageSrc={BookManager1}
                 imageAlt="Book-Manager-Search"
+              /> */}
+              <img
+                src={BookManager1}
+                alt="Book-Manager-Search"
+                className="large-images"
               />
             </div>
             <br></br>
             <div className="demo-images">
               <p>Move a book to another shelf:</p>
 
-              <Magnifier imageSrc={BookManager2} imageAlt="Book-Manager-Move" />
+              {/* <Magnifier imageSrc={BookManager2} imageAlt="Book-Manager-Move" /> */}
+              <img
+                src={BookManager2}
+                alt="Book-Manager-Move"
+                className="large-images"
+              />
             </div>
             <div>
               <Button

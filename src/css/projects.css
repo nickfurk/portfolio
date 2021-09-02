@@ -56,3 +56,11 @@
   color: black;
   text-decoration: underline;
 }
+
+.project-badge {
+  font-size: 1.1em;
+}
+
+.large-images {
+  width: 100%;
+}
