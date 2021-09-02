@@ -1,7 +1,12 @@
 .typing {
   color: white;
+  margin-top: 2%;
 }
 
 .banner {
   margin-top: 3%;
+}
+
+.divider {
+  margin-top: 18px;
 }

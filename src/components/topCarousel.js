@@ -28,6 +28,7 @@ export default class TopCarousel extends Component {
                 src={AprilImage}
                 alt="Download CV"
               />
+              <div className="divider"></div>
               <Carousel.Caption>
                 <h2>
                   <Typist className="typing">Hello, I'm April!</Typist>
