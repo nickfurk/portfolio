@@ -150,7 +150,7 @@ export default function SimpleAccordion() {
               </div>
             </AccordionDetails>
             <br></br>
-            <div className="jobwebscrapper-architecture">
+            <div>
               <p>Architecture:</p>
               {/* <Magnifier
                 imageSrc={JobScrapperArchitecture}
@@ -159,6 +159,7 @@ export default function SimpleAccordion() {
               <img
                 src={JobScrapperArchitecture}
                 alt="Job Webscraper Architecture"
+                className="jobwebscrapper-architecture"
               />
             </div>
             <br></br>
