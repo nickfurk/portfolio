@@ -66,7 +66,7 @@ export default function SimpleAccordion() {
                   updates the website
                 </li>
                 <li>
-                  Used CloudFlare for content network delivery (CDN) to improve
+                  Used CloudFlare for content delivery network (CDN) to improve
                   website load time, as well as CloudFlare's Secure Socket Layer
                   (SSL) for ensuring secure connections
                 </li>
