@@ -24,6 +24,7 @@ import JobScrapperArchitecture from "../images/jobwebscrapper-architecture.png";
 import JobScrapperRDS from "../images/webscrapper-rds.png";
 import BlackJackImg from "../images/blackjack-example.png";
 import PortfolioArchitecture from "../images/portfolio-architecture.png";
+import TextBasedAdventure from "../images/text-based-adventure.png";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import BorderColorIcon from "@material-ui/icons/BorderColor";
@@ -352,6 +353,73 @@ export default function SimpleAccordion() {
               >
                 {" "}
                 <VisibilityIcon /> View site
+              </Button>
+            </div>
+          </Accordion>
+
+          {/* --- A Text-Based Adventure --- */}
+          <Accordion defaultExpanded="true">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Badge pill variant="info" className="project-badge">
+                Text-Based Game
+              </Badge>{" "}
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="task-description">
+                <li>
+                  A text-based roleplaying game where the player moves on a grid
+                  and encounters monsters
+                </li>
+                <li>
+                  The game is developed with one other member, it includes:
+                  character type selections, levelling up of monsters' damage
+                  point, levelling up of player's healing point, probability of
+                  encountering monsters based on character type, and probability
+                  of monsters running away. These data are stored in
+                  dictionaries
+                </li>
+                <li>
+                  The flow of the game is controlled by a while loop and it only
+                  ends when the player and the monster boss HP are equal to zero
+                  or less. Each function includes docstring and is tested by
+                  either doctest(s) or unit tests
+                </li>
+
+                <li className="tech-stack-line">
+                  <span>Tech stack: Python </span>
+                </li>
+              </div>
+            </AccordionDetails>
+
+            <div className="demo-images">
+              <p>Sample round:</p>
+              {/* <Magnifier
+                imageSrc={BookManager1}
+                imageAlt="Book-Manager-Search"
+              /> */}
+              <img
+                src={TextBasedAdventure}
+                alt="Text-Based Adventure Image"
+                className="text-based-adventure"
+              />
+            </div>
+
+            <div>
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/nickfurk/text-based-game",
+                    "_blank"
+                  )
+                }
+              >
+                <GitHubIcon /> Source code
               </Button>
             </div>
           </Accordion>
