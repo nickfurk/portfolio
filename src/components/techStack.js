@@ -6,33 +6,46 @@ export default class techStack extends Component {
   render() {
     return (
       <div>
+        <br></br>
+        <br></br>
+
         <h3>
           <Badge bg="secondary">Tech Stack</Badge>
         </h3>
         <div className="tech-stack-list">
           <Container>
             <Row>
-              <Col className="stack-item" sm={2}>
+              <Col className="stack-item type" sm={4}>
                 Language:{" "}
               </Col>
-              <Col sm={8}>
+              <Col sm={6} className="badge-font">
                 <Badge pill variant="dark">
                   Python
                 </Badge>{" "}
+                
                 <Badge pill variant="dark">
                   JavaScript
                 </Badge>{" "}
                 <Badge pill variant="dark">
-                  node.js
+                  Java
+                </Badge>{" "}
+                <Badge pill variant="dark">
+                  Kotlin
+                </Badge>{" "}
+                <Badge pill variant="dark">
+                  C#
+                </Badge>{" "}
+                <Badge pill variant="dark">
+                  Visual Basic
                 </Badge>{" "}
               </Col>
             </Row>
 
             <Row>
-              <Col className="stack-item" sm={2}>
+              <Col className="stack-item type" sm={4}>
                 Database:{" "}
               </Col>
-              <Col sm={8}>
+              <Col sm={6} className="badge-font">
                 <Badge pill variant="secondary">
                   RDS
                 </Badge>{" "}
@@ -46,10 +59,10 @@ export default class techStack extends Component {
             </Row>
 
             <Row>
-              <Col className="stack-item" sm={2}>
+              <Col className="stack-item type" sm={4}>
                 Framework:{" "}
               </Col>
-              <Col sm={8}>
+              <Col sm={6} className="badge-font">
                 <Badge pill variant="dark">
                   React
                 </Badge>{" "}
@@ -65,14 +78,17 @@ export default class techStack extends Component {
                 <Badge pill variant="dark">
                   Material-UI
                 </Badge>{" "}
+                <Badge pill variant="dark">
+                  Flutter
+                </Badge>{" "}
               </Col>
             </Row>
 
             <Row>
-              <Col className="stack-item" sm={2}>
+              <Col className="stack-item type" sm={4}>
                 Tools:{" "}
               </Col>
-              <Col sm={8}>
+              <Col sm={6} className="badge-font">
                 <Badge pill variant="secondary">
                   Docker / Containers
                 </Badge>{" "}

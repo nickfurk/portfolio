@@ -11,13 +11,13 @@ import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import Typography from "@material-ui/core/Typography";
 import "../css/education.css";
 
-export default class Education extends Component {
+export default class Work extends Component {
   render() {
     return (
       <div>
         <br></br>
         <h3>
-          <Badge bg="secondary">Education</Badge>
+          <Badge bg="secondary">Relevant Working Experience</Badge>
         </h3>
         <div className="education-section">
           <React.Fragment>
@@ -26,11 +26,10 @@ export default class Education extends Component {
                 <TimelineOppositeContent>
                   <Typography color="textSecondary">
                     <div className="program-title">
-                      Dip Computer Systems Technology
+                      Software Developer Intern
                     </div>
                     <div className="school">
-                      British Columbia Institude of Technology <br />
-                      Cumulative Average 91%
+                        Payment Source
                     </div>
                   </Typography>
                 </TimelineOppositeContent>
@@ -40,7 +39,7 @@ export default class Education extends Component {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>Jan 2021 - exp. Dec 2023</Typography>
+                  <Typography>Jan 2022 - Aug 2022</Typography>
                 </TimelineContent>
               </TimelineItem>
 
@@ -48,9 +47,13 @@ export default class Education extends Component {
                 <TimelineOppositeContent>
                   <Typography color="textSecondary">
                     <div className="program-title">
-                      B.Sc. Biological & Physical Sciences (Double Major)
+                      Business Development Manager
                     </div>
-                    <div className="school">University of Alberta</div>
+                    <div className="school">
+                        Ecloudvalley Technology <br />
+                        AWS Premier Consulting Partner
+                        
+                    </div>
                   </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
@@ -58,7 +61,7 @@ export default class Education extends Component {
                   {/* <TimelineConnector /> */}
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>Once upon a time</Typography>
+                  <Typography>Jan 2018 - Jan 2020 </Typography>
                 </TimelineContent>
               </TimelineItem>
             </Timeline>

@@ -33,13 +33,13 @@ export default function SimpleAccordion() {
   return (
     <React.Fragment>
       <Element name="projects">
-        <div className="project-section">
+        <div className="project-section container">
           <br></br>
           <br></br>
           <br></br>
 
           <h1>
-            <Badge bg="secondary">Projects</Badge>
+            <Badge bg="secondary">Personal Projects</Badge>
             <FlareIcon />
           </h1>
 
@@ -49,10 +49,9 @@ export default function SimpleAccordion() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              className="project-title"
             >
-              <Badge pill variant="info" className="project-badge">
                 aprilc.xyz (Current Website)
-              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -105,16 +104,78 @@ export default function SimpleAccordion() {
             </div>
           </Accordion>
 
+          {/* --- Project Gateway --- */}
+          <Accordion defaultExpanded="true">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              className="project-title"
+            >
+                AI Powered Patient App
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="task-description">
+                <li>
+                  Gateway is an AI-powered app designed to address medical queries, summarize patient data, and manage patient information
+                </li>
+                <li>
+                  Collaborated with a team of three members during a hackathon and completed the project within 24 hours
+                </li>
+
+                <li>
+                  Led the backend development using the .dart language and integrated the app with the OpenAI API
+                </li>
+                <li className="tech-stack-line">
+                  <span>
+                    Tech stack: Flutter, .dart, OpenAI API
+                  </span>
+                </li>
+              </div>
+            </AccordionDetails>
+            <br></br>
+            <br></br>
+
+            <div>
+              <p>Demo Video:</p>
+
+              <iframe 
+                width="640" 
+                height="562" 
+                src="https://www.loom.com/embed/92d1df11b0b646169e531da2ae73f4fd?sid=80f5ef9a-a4e9-4323-b56a-22893b889ed0" 
+                frameborder="0" 
+                webkitallowfullscreen 
+                mozallowfullscreen 
+                allowfullscreen>
+              </iframe>
+            </div>
+            
+
+            <div>
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/Matirix/Project_Gateway",
+                    "_blank"
+                  )
+                }
+              >
+                <GitHubIcon /> Source code
+              </Button>
+            </div>
+          </Accordion>
+
           {/* --- JOB WEB SCRAPER --- */}
           <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              className="project-title"
             >
-              <Badge pill variant="info" className="project-badge">
                 Job Web Scraper
-              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -192,10 +253,9 @@ export default function SimpleAccordion() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              className="project-title"
             >
-              <Badge pill variant="info" className="project-badge">
                 Tree Bien (React Web App)
-              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -295,10 +355,9 @@ export default function SimpleAccordion() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              className="project-title"
             >
-              <Badge pill variant="info" className="project-badge">
                 CapWise (Occupancy Counter)
-              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -363,10 +422,9 @@ export default function SimpleAccordion() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              className="project-title"
             >
-              <Badge pill variant="info" className="project-badge">
                 Text-Based Game
-              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -430,10 +488,9 @@ export default function SimpleAccordion() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              className="project-title"
             >
-              <Badge pill variant="info" className="project-badge">
                 Book Manager
-              </Badge>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <div className="task-description">
@@ -494,6 +551,12 @@ export default function SimpleAccordion() {
               </Button>
             </div>
           </Accordion>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+
 
           {/* --- BLACKJACK --- */}
           {/* <Accordion defaultExpanded="true">

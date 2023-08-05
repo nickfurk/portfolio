@@ -11,19 +11,21 @@ import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Connect from "./components/connect";
 import Footer from "./components/footer";
+import Work from "./components/work";
+import Awards from "./components/awards";
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <TopCarousel></TopCarousel>
+      {/* <TopCarousel></TopCarousel> */}
       <About></About>
-      <TechStack></TechStack>
-      <Certs></Certs>
+      <Work></Work>
       <Education></Education>
+      <Certs></Certs>
+      <Awards></Awards>
+      <TechStack></TechStack>
       <Projects></Projects>
-      <Contact></Contact>
-      <Connect></Connect>
       <Footer></Footer>
     </div>
   );

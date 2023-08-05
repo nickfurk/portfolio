@@ -12,11 +12,11 @@ export default class Certs extends Component {
           <Badge bg="secondary">Certifications</Badge>
         </h3>
 
-        <div className="cert-list">
+        <div className="cert-list container">
           <Container>
             <Row>
-              <Col sm={2}>AWS: </Col>
-              <Col sm={8}>
+              <Col className="type custom-col" sm={4}>AWS: </Col>
+              <Col sm={6}>
                 <Badge pill variant="info">
                   Certified Solution Architect - Associate (expired 2020)
                 </Badge>{" "}

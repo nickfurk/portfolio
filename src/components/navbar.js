@@ -11,23 +11,39 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import { fontFamily } from "@material-ui/system";
 
 const ScrollLink = Scroll.ScrollLink;
 
 export default class Sidebar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapsed: true,
+    };
+  }
+
+  handleNavItemClick = () => {
+    this.setState({ collapsed: !this.state.collapsed });
+  };
+
   render() {
     return (
       <div>
         <Navbar
           collapseOnSelect
+          expanded={!this.state.collapsed}
           expand="lg"
           bg="dark"
           variant="dark"
           fixed="top"
         >
-          <Navbar.Brand href="home">April Cheng</Navbar.Brand>
+          <Navbar.Brand href="home" style={{fontFamily: 'Inter'}}>apriL cheng</Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            onClick={this.handleNavItemClick}
+            aria-controls="responsive-navbar-nav"
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link>
@@ -37,6 +53,7 @@ export default class Sidebar extends Component {
                   smooth={true}
                   offset={-70}
                   duration={500}
+                  onClick={this.handleNavItemClick}
                 >
                   About
                 </Link>
@@ -49,20 +66,9 @@ export default class Sidebar extends Component {
                   smooth={true}
                   offset={-70}
                   duration={500}
+                  onClick={this.handleNavItemClick}
                 >
                   Projects
-                </Link>
-              </Nav.Link>
-
-              <Nav.Link>
-                <Link
-                  to="contact"
-                  activeClass="active"
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
-                  Contact
                 </Link>
               </Nav.Link>
             </Nav>

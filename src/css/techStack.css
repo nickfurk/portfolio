@@ -7,3 +7,23 @@
 .stack-item {
   text-align: left;
 }
+
+.type {
+  text-align: right;
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+@media (max-width: 650px) {
+  .type {
+    text-align: left; 
+  }
+  .custom-col {
+    flex: 0 0 16.66666667%; 
+    max-width: 16.66666667%;
+  }
+}
+
+.badge-font{
+  font-size: large;
+}

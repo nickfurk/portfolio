@@ -1,0 +1,12 @@
+.container {
+    justify-content: center;
+}
+
+.container p {
+    margin-bottom: 10px;
+
+}
+
+.button-style {
+    padding: 0px 5px;
+}

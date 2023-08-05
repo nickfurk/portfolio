@@ -8,3 +8,24 @@
   color: white;
   /* font-size: 1.1em; */
 }
+
+.container {
+  max-width: 1150px; 
+  margin: 0 auto;
+}
+
+.type {
+  text-align: right;
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+@media (max-width: 650px) {
+  .type {
+    text-align: left; 
+  }
+  .custom-col {
+    flex: 0 0 16.66666667%; 
+    max-width: 16.66666667%;
+  }
+}
