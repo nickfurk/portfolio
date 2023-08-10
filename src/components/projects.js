@@ -14,7 +14,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FlareIcon from "@material-ui/icons/Flare";
 import "../css/projects.css";
-import { GlassMagnifier, Magnifier } from "react-image-magnifiers";
+// import { GlassMagnifier, Magnifier } from "react-image-magnifiers";
 import TreeDemo1 from "../images/treedemo1.png";
 import TreeDemo2 from "../images/treedemo2.png";
 import CapWiseDemo from "../images/capwise-demo.png";
