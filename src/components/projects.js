@@ -28,6 +28,7 @@ import TextBasedAdventure from "../images/text-based-adventure.png";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import BorderColorIcon from "@material-ui/icons/BorderColor";
+import GameplayshopOtp from "../images/otp.png";
 
 export default function SimpleAccordion() {
   return (
@@ -39,7 +40,7 @@ export default function SimpleAccordion() {
           <br></br>
 
           <h1>
-            <Badge bg="secondary">Personal Projects</Badge>
+            <Badge bg="secondary">Projects</Badge>
             <FlareIcon />
           </h1>
 
@@ -167,6 +168,70 @@ export default function SimpleAccordion() {
               </Button>
             </div>
           </Accordion>
+
+          {/* --- GamePlayShop Backend --- */}
+          <Accordion defaultExpanded="true">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              className="project-title"
+            >
+                GamePlayShop Backend
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="task-description">
+                <li>
+                  Built RESTful APIs and backend logic for a co-op prepaid card project (gameplayshop.com)
+                </li>
+                <li>
+                  Implemented user authentication process using AWS Cognito. Incorporating pre-authentication and post-confirmation features to enhance user security
+                </li>
+                <li>
+                  Utilized AWS Pinpoint for phone pin verification, enabling the sending and verification of OTP messages whild validating phone numbers within the desired region
+                </li>
+                <li>
+                  Integrated a 3rd-party vendor for payment verification, ensuring enchased transaction security
+                </li>
+                <li>
+                Developed and tested API, updating the Swagger definition, and conducting testing with Postman, Visual Studio mock Lambda test tool, and AWS Lambda console to ensure accuracy and functionality
+                </li>
+                <li>
+                  Collaborated with the frontend team, backend team, solutions architect, and 3rd-party providers
+                </li>
+
+                <li className="tech-stack-line">
+                  <span>
+                    Tech stack: C#, AWS
+                  </span>
+                </li>
+              </div>
+            </AccordionDetails>
+
+            <div className="demo-images">
+              <p>Enter number to send one time password:</p>
+
+              <img
+                src={GameplayshopOtp}
+                alt="GamePlayShop send OTP text image"
+                className="otp"
+              />
+            </div>
+
+            <div>
+              <Button
+                variant="secondary"
+                className="view-site"
+                onClick={() =>
+                  window.open("https://gameplayshop.com/", "_blank")
+                }
+              >
+                {" "}
+                <VisibilityIcon /> View site
+              </Button>
+            </div>
+          </Accordion>
+
 
           {/* --- JOB WEB SCRAPER --- */}
           <Accordion defaultExpanded="true">
@@ -484,7 +549,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- BOOK MANAGER --- */}
-          <Accordion defaultExpanded="true">
+          {/* <Accordion defaultExpanded="true">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -516,10 +581,7 @@ export default function SimpleAccordion() {
 
             <div className="demo-images">
               <p>Search for a book:</p>
-              {/* <Magnifier
-                imageSrc={BookManager1}
-                imageAlt="Book-Manager-Search"
-              /> */}
+       
               <img
                 src={BookManager1}
                 alt="Book-Manager-Search"
@@ -530,7 +592,6 @@ export default function SimpleAccordion() {
             <div className="demo-images">
               <p>Move a book to another shelf:</p>
 
-              {/* <Magnifier imageSrc={BookManager2} imageAlt="Book-Manager-Move" /> */}
               <img
                 src={BookManager2}
                 alt="Book-Manager-Move"
@@ -551,7 +612,7 @@ export default function SimpleAccordion() {
                 <GitHubIcon /> Source code
               </Button>
             </div>
-          </Accordion>
+          </Accordion> */}
           <br></br>
           <br></br>
           <br></br>
