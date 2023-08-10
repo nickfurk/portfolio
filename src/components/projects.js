@@ -228,7 +228,7 @@ export default function SimpleAccordion() {
             <div className="demo-images">
               <p>Portion of the MySql table:</p>
 
-              <Magnifier imageSrc={JobScrapperRDS} imageAlt="database-table" />
+              <img src={JobScrapperRDS} class="job-table" imageAlt="database-table" />
             </div>
 
             <div>
