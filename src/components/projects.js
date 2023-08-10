@@ -138,16 +138,17 @@ export default function SimpleAccordion() {
 
             <div>
               <p>Demo Video:</p>
-
-              <iframe 
-                width="640" 
-                height="562" 
-                src="https://www.loom.com/embed/92d1df11b0b646169e531da2ae73f4fd?sid=80f5ef9a-a4e9-4323-b56a-22893b889ed0" 
-                frameborder="0" 
-                webkitallowfullscreen 
-                mozallowfullscreen 
-                allowfullscreen>
-              </iframe>
+              <div className="gateway-demo">
+                <iframe 
+                  width="640" 
+                  height="562" 
+                  src="https://www.loom.com/embed/92d1df11b0b646169e531da2ae73f4fd?sid=80f5ef9a-a4e9-4323-b56a-22893b889ed0" 
+                  frameborder="0" 
+                  webkitallowfullscreen 
+                  mozallowfullscreen 
+                  allowfullscreen>
+                </iframe>
+              </div>
             </div>
             
 

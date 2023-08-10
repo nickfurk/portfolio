@@ -94,3 +94,19 @@
 .job-table {
   width: 95%;
 }
+
+.gateway-demo {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.gateway-demo iframe {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 100%;
+}
