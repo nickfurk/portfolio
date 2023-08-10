@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Badge } from "react-bootstrap";
 import "../css/about.css";
-import ScrollAnimation from "react-animate-on-scroll";
 import {
   Link,
   Element,
