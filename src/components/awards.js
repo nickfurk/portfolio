@@ -18,7 +18,7 @@ export default class Awards extends Component {
         </h3>
 
         <div className="container">
-            <p>YVR Smart Airport Hackathon | First Pace (May 2023)</p>            
+            <p>YVR Smart Airport Hackathon | First Place (May 2023)</p>            
             <Button
                 variant="outline-secondary"
                 className="button-style"
