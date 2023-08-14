@@ -44,6 +44,62 @@ export default function SimpleAccordion() {
             <FlareIcon />
           </h1>
 
+          {/* --- YVR Water Monitoring System --- */}
+          <Accordion defaultExpanded="true">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              className="project-title"
+            >
+                Water Monitoring System (YVR Airport)
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="task-description">
+                <li>
+                  An R&D project undertaken by the Vancouver Airport Authority. Its purpose is to monitor
+                  rising sea levels and water quality around the sea island on which Vancouver International Airport is on
+                </li>
+                <li>
+                Redesigned AWS cloud architecture to optimize efficiency, scalability, and security by incorporating CI/CD, 
+                serverless computing, robust backups, and caching mechanisms. The new design successfully gained client (YVR) approval
+                </li>
+                <li>
+                Architected and tested the bi-directional communication feature between hardware devices and the dashboard. 
+                This critical feature played a decisive role in the project's success
+                </li>
+                <li>
+                Initiated collaboration with both the device team and the dashboard team to ensure successful planning and implementation of essential features
+                </li>
+                <li className="tech-stack-line">
+                  <span>
+                    Tech stack: AWS (IoT Core, Lambda, Timestream, Backup, SES, CodeArtifact, CloudWatch, DynamoDB, API Gateway), GitHub Actions
+                  </span>
+                </li>
+              </div>
+            </AccordionDetails>
+            <br></br>
+            {/* <div>
+              <p>Architecture:</p>
+              <img
+                src={PortfolioArchitecture}
+                alt="Portfolio Website Architecture"
+                className="portfolio-architecture"
+              />
+            </div>
+            <div>
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open("https://github.com/nickfurk/portfolio", "_blank")
+                }
+              >
+                <GitHubIcon /> Source code
+              </Button>
+            </div> */}
+          </Accordion>
+
           {/* --- CURRENT WEBSITE --- */}
           <Accordion defaultExpanded="true">
             <AccordionSummary
