@@ -38,7 +38,7 @@ export default class Sidebar extends Component {
           variant="dark"
           fixed="top"
         >
-          <Navbar.Brand href="home" style={{fontFamily: 'Inter'}}>apriL cheng</Navbar.Brand>
+          <Navbar.Brand href="/" style={{fontFamily: 'Inter'}}>april cheng</Navbar.Brand>
 
           <Navbar.Toggle
             onClick={this.handleNavItemClick}
