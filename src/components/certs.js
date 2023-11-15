@@ -18,10 +18,10 @@ export default class Certs extends Component {
               <Col className="type custom-col" sm={4}>AWS: </Col>
               <Col sm={6}>
                 <Badge pill variant="info">
-                  Certified Solution Architect - Associate (exp 2020)
+                  Certified Solutions Architect - Associate (exp 2020)
                 </Badge>{" "}
                 <Badge pill variant="info">
-                  Certified Solution Architect - Professional (exp 2020)
+                  Certified Solutions Architect - Professional (exp 2020)
                 </Badge>
               </Col>
             </Row>
