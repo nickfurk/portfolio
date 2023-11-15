@@ -36,6 +36,12 @@ export default class techStack extends Component {
                   C#
                 </Badge>{" "}
                 <Badge pill variant="dark">
+                  C
+                </Badge>{" "}
+                <Badge pill variant="dark">
+                  Node.js
+                </Badge>{" "}
+                <Badge pill variant="dark">
                   Visual Basic
                 </Badge>{" "}
               </Col>
