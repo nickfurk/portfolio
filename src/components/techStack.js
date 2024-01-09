@@ -73,7 +73,7 @@ export default class techStack extends Component {
                   React
                 </Badge>{" "}
                 <Badge pill variant="dark">
-                  express.js
+                  ASP.NET
                 </Badge>{" "}
                 <Badge pill variant="dark">
                   Beautifulsoup
@@ -97,6 +97,9 @@ export default class techStack extends Component {
               <Col sm={6} className="badge-font">
                 <Badge pill variant="secondary">
                   Docker / Containers
+                </Badge>{" "}
+                <Badge pill variant="secondary">
+                  Git
                 </Badge>{" "}
                 <Badge pill variant="secondary">
                   Figma

@@ -29,6 +29,8 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import BorderColorIcon from "@material-ui/icons/BorderColor";
 import GameplayshopOtp from "../images/otp.png";
+import YVRArchitecture from "../images/yvr-architecture.png";
+import StorefrontEmail from "../images/storefront-email.png";
 
 export default function SimpleAccordion() {
   return (
@@ -58,27 +60,102 @@ export default function SimpleAccordion() {
               <div className="task-description">
                 <li>
                   An R&D project undertaken by the Vancouver Airport Authority. Its purpose is to monitor
-                  rising sea levels and water quality around the sea island on which Vancouver International Airport is on
+                  rising sea levels and water quality around the sea island on which Vancouver International Airport is on. Worked with a team of 8 developers.
                 </li>
                 <li>
-                Redesigned AWS cloud architecture to optimize efficiency, scalability, and security by incorporating CI/CD, 
-                serverless computing, robust backups, and caching mechanisms. The new design successfully gained client (YVR) approval
+                Re-designed the system architecture to improve overall reliability. Specifics included enabling daily backups of the Amazon Timestream database to reduce in-memory storage costs, adding a cache table in the Timestream database to reduce query response time, and adding an authentication and authorization process to prevent unauthorized access.
                 </li>
                 <li>
-                Architected and tested the bi-directional communication feature between hardware devices and the dashboard. 
-                This critical feature played a decisive role in the project's success
+                Developed admin portal API on AWS Lambda using Python and integrated Cognito for authentication across both the Python backend and the TypeScript frontend.
+                </li>
+                <li>
+                Architected and tested the essential bi-directional communication feature between hardware devices and the cloud leveraging AWS IoT Core.
                 </li>
                 <li>
                 Initiated collaboration with both the device team and the dashboard team to ensure successful planning and implementation of essential features
                 </li>
                 <li className="tech-stack-line">
                   <span>
-                    Tech stack: AWS (IoT Core, Lambda, Timestream, Backup, SES, CodeArtifact, CloudWatch, DynamoDB, API Gateway), GitHub Actions
+                    Tech stack: Python, JavaScript, AWS (IoT Core, Lambda, Timestream, Backup, SES, DynamoDB, API Gateway), GitHub Actions
                   </span>
                 </li>
               </div>
             </AccordionDetails>
             <br></br>
+            <div>
+              <p>Re-designed Architecture with My Contribution</p>
+              {/* <Magnifier
+                imageSrc={PortfolioArchitecture}
+                imageAlt="Portfolio Website Architecture"
+              /> */}
+              <img
+                src={YVRArchitecture}
+                alt="Water monitoring system architecture"
+                className="portfolio-architecture"
+              />
+            </div>
+            {/* <div>
+              <p>Architecture:</p>
+              <img
+                src={PortfolioArchitecture}
+                alt="Portfolio Website Architecture"
+                className="portfolio-architecture"
+              />
+            </div>
+            <div>
+              <Button
+                variant="secondary"
+                className="source-code-button"
+                onClick={() =>
+                  window.open("https://github.com/nickfurk/portfolio", "_blank")
+                }
+              >
+                <GitHubIcon /> Source code
+              </Button>
+            </div> */}
+          </Accordion>
+          {/* --- Ecommerce Website--- */}
+          <Accordion defaultExpanded="true">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              className="project-title"
+            >
+                Ecommerce Website Backend
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="task-description">
+                <li>
+                Collaborated within an 8-member team with a primary focus on backend development
+                </li>
+                <li>
+                Developed Lambda scripts for efficient product management (adding, removing, retrieving products), favorite item management (adding, removing, retrieving products based on unique user), and order confirmation (order calculation, and sending confirmation emails)
+                </li>
+                <li>
+                Seamlessly integrated these scripts with API Gateway, establishing endpoints for the frontend team to access and utilize
+                </li>
+    
+                <li className="tech-stack-line">
+                  <span>
+                    Tech stack: Python, JavaScript, AWS (Lambda, SES, DynamoDB, API Gateway)
+                  </span>
+                </li>
+              </div>
+            </AccordionDetails>
+            <br></br>
+            <div>
+              <p>Example Order Confirmation Email</p>
+              {/* <Magnifier
+                imageSrc={PortfolioArchitecture}
+                imageAlt="Portfolio Website Architecture"
+              /> */}
+              <img
+                src={StorefrontEmail}
+                alt="Example ecommerce purchase confirmation email"
+                className="storefront-email"
+              />
+            </div>
             {/* <div>
               <p>Architecture:</p>
               <img

@@ -66,9 +66,7 @@ export default class About extends Component {
 
             <div className="container">
               <p className="who-am-I">
-                I'm a <b>Computer Systems Technology</b> student at BCIT, expecting to graduate in Dec 2023. 
-                My background is in science and business development, and now, with my technical skills, 
-                I hope to bring these experiences together to buid something impactful.
+              I have graduated from BCIT's Computer Systems Technology program. My background encompasses science and business. Now, equipped with technical skills, I aim to integrate these experiences to create a meaningful impact.
               </p>
 
               <p>

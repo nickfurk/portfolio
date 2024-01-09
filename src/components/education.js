@@ -30,7 +30,7 @@ export default class Education extends Component {
                     </div>
                     <div className="school">
                       British Columbia Institude of Technology <br />
-                      Cumulative Average 91%
+                      Average 91%
                     </div>
                   </Typography>
                 </TimelineOppositeContent>
@@ -40,7 +40,7 @@ export default class Education extends Component {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>Jan 2021 - exp. Dec 2023</Typography>
+                  <Typography>Jan 2021 - Dec 2023</Typography>
                 </TimelineContent>
               </TimelineItem>
 
