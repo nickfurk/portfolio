@@ -47,7 +47,7 @@ export default function SimpleAccordion() {
           </h1>
 
           {/* --- YVR Water Monitoring System --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -115,7 +115,7 @@ export default function SimpleAccordion() {
             </div> */}
           </Accordion>
           {/* --- Ecommerce Website--- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -178,7 +178,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- CURRENT WEBSITE --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -239,7 +239,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- Project Gateway --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -303,7 +303,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- GamePlayShop Backend --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -367,7 +367,7 @@ export default function SimpleAccordion() {
 
 
           {/* --- JOB WEB SCRAPER --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -447,7 +447,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- TREE BIEN --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -549,7 +549,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- CAPWISE --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -616,7 +616,7 @@ export default function SimpleAccordion() {
           </Accordion>
 
           {/* --- A Text-Based Adventure --- */}
-          <Accordion defaultExpanded="true">
+          <Accordion defaultExpanded={false}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
