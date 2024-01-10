@@ -26,7 +26,7 @@ export default class Education extends Component {
                 <TimelineOppositeContent>
                   <Typography color="textSecondary">
                     <div className="program-title">
-                      Dip Computer Systems Technology
+                      Computer Systems Technology (CST) Diploma
                     </div>
                     <div className="school">
                       British Columbia Institude of Technology <br />
